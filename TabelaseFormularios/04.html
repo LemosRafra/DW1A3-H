@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .usuario {
+        padding: 15px;
+      }
+      .linha1 {
+        margin: 5px;
+      }
+      .linha2 {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form align="center">
+        <container class="usuario">
+          <div class="linha1" style="text-align: center">
+            <h3>Identificação do usuário</h3>
+            <label>Nome: <input type="text" placeholder="João" /></label>
+            Senha:
+            <input type="password" />
+            CPF:
+            <input class="CPF" type="text" maxlength="11" />
+
+            Sexo:
+            <input id="female" type="radio" name="gender" value="f" />
+            <label for="female">Feminino</label>
+            <input id="male" type="radio" name="gender" value="m" />
+            <label for="male">Masculino</label>
+          </div>
+          <div class="linha2" style="text-align: center">
+            Data de Nascimento:
+            <input
+              class="Nasc"
+              type="text"
+              maxlength="10"
+              placeholder="dd/mm/aaaa"
+            />
+            Escolaridade:
+            <input class="escolaridade" type="text" />
+            Renda mensal:
+            <input class="renda" type="text" />
+            Email:
+            <input class="email" type="email" />
+          </div>
+          <div>
+            Estado:
+            <input id="sp" type="radio" name="cidade" value="sp" />
+            <label for="sp">São Paulo</label>
+            <input id="rj" type="radio" name="cidade" value="rj" />
+            <label for="rj">Rio de Janeiro</label>
+            Cidade:
+            <input class="email" type="email" />
+          </div>
+          <div style="text-align: center">
+            <label>Sua mensagem:</label>
+            <textarea class="linha2" rows="5" cols="33"></textarea>
+          </div>
+
+          <p><button>Enviar</button> <button>Limpar</button></p>
+        </container>
+      </form>
+    </div>
+  </body>
+</html>
